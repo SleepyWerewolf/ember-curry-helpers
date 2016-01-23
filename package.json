@@ -1,7 +1,7 @@
 {
-  "name": "ember-truth-helpers",
+  "name": "ember-curry-helpers",
   "version": "1.2.0",
-  "description": "Ember Truth Helpers",
+  "description": "Ember Curry Helpers",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/jmurphyau/ember-truth-helpers",
+  "repository": "https://github.com/flexyford/ember-curry-helpers",
   "engines": {
     "node": ">= 0.10.0",
     "ember-cli-app-version": "1.0.0"

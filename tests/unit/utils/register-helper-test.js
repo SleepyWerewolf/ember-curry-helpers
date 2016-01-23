@@ -2,7 +2,7 @@ import Ember from 'ember';
 import { module, test } from 'qunit';
 import {
 	registerHelper
-} from 'ember-truth-helpers/utils/register-helper';
+} from 'ember-curry-helpers/utils/register-helper';
 
 module('RegisterHelper');
 

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { pipeHelper } from 'ember-truth-helpers/helpers/pipe';
+import { pipeHelper } from 'ember-curry-helpers/helpers/pipe';
 
 var forExport = null;
 

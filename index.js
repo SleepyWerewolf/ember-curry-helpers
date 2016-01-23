@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-truth-helpers'
+  name: 'ember-curry-helpers'
 };

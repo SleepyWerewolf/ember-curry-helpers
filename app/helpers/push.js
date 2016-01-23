@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { pushHelper } from 'ember-truth-helpers/helpers/push';
+import { pushHelper } from 'ember-curry-helpers/helpers/push';
 
 var forExport = null;
 
