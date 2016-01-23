@@ -11,6 +11,8 @@ import { gtHelper } from 'ember-truth-helpers/helpers/gt';
 import { gteHelper } from 'ember-truth-helpers/helpers/gte';
 import { ltHelper } from 'ember-truth-helpers/helpers/lt';
 import { lteHelper } from 'ember-truth-helpers/helpers/lte';
+import { pipeHelper } from 'ember-truth-helpers/helpers/pipe';
+import { pushHelper } from 'ember-truth-helpers/helpers/push';
 
 export function initialize(/* container, application */) {
 
@@ -30,6 +32,8 @@ export function initialize(/* container, application */) {
   registerHelper('gte', gteHelper);
   registerHelper('lt', ltHelper);
   registerHelper('lte', lteHelper);
+  registerHelper('pipe', pipeHelper);
+  registerHelper('push', pushHelper);
 }
 
 export default {
