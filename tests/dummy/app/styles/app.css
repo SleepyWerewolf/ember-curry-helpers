@@ -1,0 +1,84 @@
+input#new-todo {
+  display: block;
+  margin: 0;
+  width: 10%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input#new-todo:focus {
+  outline: none;
+  border-bottom: solid 3px #c9c9c9;
+}
+
+input#new-todo {
+  padding: 10px;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+.todo-item {
+  width: 25%;
+  margin: 20px;
+  position: relative;
+}
+
+/**
+ * Create the box for the checkbox
+ */
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.todo-item label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background: #eee;
+  border:1px solid #ddd;
+}
+
+.todo-item label:after {
+  opacity: 0.1;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.todo-item label:hover::after {
+  opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.todo-item input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+p {
+  display: inline;
+  margin-left: 25px;
+  font-size: 25px;
+}

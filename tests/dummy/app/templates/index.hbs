@@ -1,0 +1,13 @@
+{{input id="new-todo" value=description type=text action=(pipe
+  (hash description=description isDone=false)
+  (push todos)
+  (action (mut todos))
+  (action (mut description "")))
+}}
+{{#each todos as |todo index|}}
+  <div class="todo-item">
+    {{input type="checkbox" checked=todo.isDone id=(concat 'todo' index)}}
+    <label for={{concat 'todo' index}}></label>
+    <p>{{todo.description}}</p>
+  </div>
+{{/each}}
