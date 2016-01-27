@@ -7,7 +7,7 @@ HTMLBars template helpers for additional action currying capabilities
 Helper   | JavaScript                           | HTMLBars
 ---------|--------------------------------------|-------------------
 pipe     | `if (a === b)`                       | `{{if (eq a b)}}`
-push     | `if (a !== b)`                       | `{{if (not-eq a b)}}`
+append   | `if (a !== b)`                       | `{{if (not-eq a b)}}`
 
 ## Install
 

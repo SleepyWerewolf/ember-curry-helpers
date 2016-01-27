@@ -2,7 +2,7 @@ import Ember from 'ember';
 import { registerHelper } from 'ember-curry-helpers/utils/register-helper';
 
 import { pipeHelper } from 'ember-curry-helpers/helpers/pipe';
-import { pushHelper } from 'ember-curry-helpers/helpers/push';
+import { appendHelper } from 'ember-curry-helpers/helpers/append';
 import { closureActionHelper } from 'ember-curry-helpers/helpers/closure-action';
 
 export function initialize(/* container, application */) {
@@ -14,7 +14,7 @@ export function initialize(/* container, application */) {
   }
 
   registerHelper('pipe', pipeHelper);
-  registerHelper('push', pushHelper);
+  registerHelper('append', appendHelper);
   registerHelper('closureActionHelper', closureActionHelper);
 }
 

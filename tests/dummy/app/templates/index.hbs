@@ -1,6 +1,6 @@
 {{input id="new-todo" value=description type=text action=(pipe
   (hash description=description isDone=false)
-  (push todos)
+  (append todos)
   (action (mut todos))
   (action (mut description "")))
 }}
