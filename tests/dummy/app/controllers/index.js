@@ -1,3 +1,3 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({  todos: [] });
+export default Ember.Controller.extend({ todos: [] });
